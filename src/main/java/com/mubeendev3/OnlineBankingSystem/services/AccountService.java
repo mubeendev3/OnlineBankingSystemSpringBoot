@@ -38,6 +38,11 @@ public class AccountService {
         return accountRepository.findByUserUserId(userId);
     }
 
+    // Find all accounts for a specific user
+    public List<Account> getAccounts(int userId) {
+        return accountRepository.getAccountByUser(userId);
+    }
+
     // Find an account by ID
     public Account getAccountById(int accountId) {
         return accountRepository.findById(accountId).orElse(null);

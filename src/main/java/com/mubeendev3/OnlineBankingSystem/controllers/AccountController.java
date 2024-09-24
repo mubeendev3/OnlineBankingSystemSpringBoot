@@ -25,6 +25,13 @@ public class AccountController {
         return accountService.getAccountsByUserId(userId);
     }
 
+    @GetMapping("/{userId}/accountDetails")
+    public List<Account> getAccounts(@PathVariable int userId) {
+
+        List<Account> result =  accountService.getAccounts(userId);
+        return result;
+    }
+
     @DeleteMapping("/{accountId}")
     public void deleteAccount(@PathVariable int accountId) {
         accountService.deleteAccount(accountId);

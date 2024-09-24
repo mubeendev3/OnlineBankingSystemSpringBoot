@@ -26,6 +26,7 @@ public class UserService {
     public long countUserAccounts(int userId) {
         User user = userRepository.findById(userId).orElse(null);
         if (user != null && user.getAccounts() != null) {
+            System.out.println(user.getAccounts());
             return user.getAccounts().size(); // Returns the number of accounts
         }
         return 0; // User not found or no accounts

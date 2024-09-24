@@ -78,16 +78,16 @@ public class User {
         this.accounts = accounts;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", accounts=" + accounts +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "User{" +
+//                "userId=" + userId +
+//                ", username='" + username + '\'' +
+//                ", password='" + password + '\'' +
+//                ", fullName='" + fullName + '\'' +
+//                ", email='" + email + '\'' +
+//                ", phoneNumber='" + phoneNumber + '\'' +
+//                ", accounts=" + accounts +
+//                '}';
+//    }
 }
